@@ -1,0 +1,55 @@
+{
+    "role_scopes": [
+      {
+        "role_name": "admin",
+        "scope_id": "oms"
+      },
+      {
+        "role_name": "admin",
+        "scope_id": "wms"
+      },
+      {
+        "role_name": "guest",
+        "scope_id": "oms"
+      },
+      {
+        "role_name": "admin",
+        "scope_id": "cmt"
+      }
+    ],
+    "role_permissions": [
+      {
+        "role_name": "admin",
+        "permission_id": "oms:pickupReq:get"
+      }
+    ],
+    "roles": [
+        {
+            "name": "agent",
+            "description": "delivery_boy"
+        },
+        {
+            "name": "clerk",
+            "description": "writer"
+        },
+        {
+            "name": "tester",
+            "description": "Test"
+        }
+    ],
+    "permissions": [
+        {
+            "id": "oms:pickupReq:get",
+            "description": "getPickupRequisition",
+            "scope_id": "oms"
+        }
+    ],
+    "route_permissions": [
+        {
+            "route": "tarzan/abc",
+            "request_method": "GET",
+            "service": "orders",
+            "required_permission_id": "oms:pickupReq:get"
+        }
+    ]
+}
