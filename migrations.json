@@ -21,6 +21,10 @@
       {
         "role_name": "admin",
         "permission_id": "oms:pickupReq:get"
+      },
+      {
+        "role_name": "dummyrole",
+        "permission_id": "oms:dummy:get"
       }
     ],
     "roles": [
